@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="10dp">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#ffffff"
+      android:paddingLeft="10dp"
+      android:paddingRight="10dp"
+      android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Best Bakery"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/robotoregular" />
+    <TextView
+        android:id="@+id/invNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inv-001"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:paddingLeft="10dp"
+        android:fontFamily="@font/robotoregular"
+        android:layout_below="@id/items"/>
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$50.00"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/invNumber"
+        android:layout_marginLeft="50dp"
+        android:fontFamily="@font/robotoregular"
+        android:layout_below="@id/items"/>
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1st June, 2019"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/taviraj_extralight"
+        android:layout_below="@id/invNumber"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_check"
+        android:layout_below="@id/invNumber"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@id/date"/>
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        android:layout_below="@id/date"/>
+  </RelativeLayout>
+
+</android.support.v7.widget.CardView>
