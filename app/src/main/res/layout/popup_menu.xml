@@ -21,6 +21,7 @@
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="5dp"
         android:background="@drawable/popup_header">
       <TextView
           android:id="@+id/header_txt"
@@ -52,7 +53,7 @@
           android:id="@+id/hint_items"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:textColor="@color/colorAccent"
+          android:textColor="#999999"
           android:text="Items"
           android:textStyle="bold"
           android:textSize="17sp"
@@ -64,8 +65,8 @@
           android:id="@+id/item"
           android:layout_width="match_parent"
           android:layout_height="35dp"
-          android:layout_marginLeft="16dp"
-          android:layout_marginRight="16dp"
+          android:layout_marginLeft="12dp"
+          android:layout_marginRight="12dp"
           android:paddingTop="4dp"
           android:paddingBottom="4dp"
           android:layout_below="@id/hint_items"
@@ -82,7 +83,7 @@
           android:id="@+id/hint_quality"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:textColor="@color/colorAccent"
+          android:textColor="#999999"
           android:text="Quality"
           android:textStyle="bold"
           android:textSize="17sp"
@@ -95,8 +96,8 @@
           android:id="@+id/quality"
           android:layout_width="match_parent"
           android:layout_height="35dp"
-          android:layout_marginLeft="16dp"
-          android:layout_marginRight="16dp"
+          android:layout_marginLeft="12dp"
+          android:layout_marginRight="12dp"
           android:paddingTop="4dp"
           android:paddingBottom="4dp"
           android:layout_below="@id/hint_quality"
@@ -124,7 +125,7 @@
             android:layout_marginBottom="10dp"
             android:layout_alignParentRight="true"
             android:layout_below="@id/quality_line"
-            android:background="#3F51B5" />
+            android:background="@color/colorAccent" />
     </RelativeLayout>
     </RelativeLayout>
   </ScrollView>
